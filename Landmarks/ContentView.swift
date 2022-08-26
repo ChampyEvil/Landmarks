@@ -10,9 +10,18 @@ import CoreData
 
 struct ContentView: View {
     var body: some View {
-        Text("Turtle Rock!")
-            .font(.title)
-            
+        VStack(alignment: .leading) {
+            Text("Turtle Rock!")
+                .font(.title)
+            HStack {
+                Text("My Park")
+                    .font(.subheadline)
+                Spacer()
+                Text("Thailand")
+                    .font(.subheadline)
+            }
+        }
+        .padding()
     }
 }
 
